@@ -1,0 +1,74 @@
+.book {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+  background-color: navy;
+  color: white;
+  min-height: 300px;
+  margin: 50px;
+}
+.book h1 {
+  text-align: center;
+  padding: 5px;
+}
+.book p {
+  padding: 5px;
+}
+.showBooks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 100%;
+}
+.showBooks .book {
+  width: 90%;
+}
+.bookmain {
+  width: 100%;
+  background-color: #232323;
+  min-height: 100vh;
+  color: white;
+}
+.formAdd {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formAdd input {
+  width: 40%;
+  height: 30px;
+  margin: 10px 0;
+  padding: 0 20px;
+  background-color: transparent;
+  border: none;
+  border: 2px solid white;
+  color: white;
+}
+
+.formAdd textarea {
+  width: 40%;
+  height: 200px;
+  margin: 10px 0;
+  padding: 0 20px;
+  background-color: transparent;
+  border: none;
+  border: 2px solid white;
+  color: white;
+}
+.formAdd *::placeholder {
+  color: white;
+}
+.formAdd button {
+  width: 20%;
+  height: 40px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+.formAdd button:hover {
+  background-color: navy;
+}

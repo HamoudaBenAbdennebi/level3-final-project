@@ -1,0 +1,167 @@
+.navbar-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #010211;
+  color: white;
+  position: fixed;
+  z-index: 1000;
+  opacity: 0.9;
+}
+.navbar-container * {
+  padding: 16px;
+}
+.login-button {
+  border-left: 1px solid white;
+  transition: 0.3s;
+  font-weight: 500;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+}
+.login-button:hover {
+  background-color: white;
+  color: #03041e;
+}
+
+Link {
+  color: white;
+  text-decoration: none;
+}
+/*//////////////////////////////////*/
+
+.welcome-container {
+  width: 100%;
+  min-height: 60vh;
+  background-color: #050631;
+  display: flex;
+  justify-content: space-between;
+}
+
+.welcome-container .welcome-div {
+  min-width: 50%;
+  min-height: 100%;
+}
+.text-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.text-part h2 {
+  font-size: 35px;
+}
+.content {
+  max-width: 70%;
+}
+.content * {
+  padding: 5px 0;
+}
+
+.deco-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50%;
+}
+.deco-part img {
+  width: 50%;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+/*//////////////////////////////////*/
+.about-div {
+  width: 100%;
+  min-height: 20vh;
+  background-color: #040424;
+  color: white;
+}
+
+.about-div div {
+  margin: 0 7%;
+}
+.about-div div h2 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+.about-div h2,
+.about-div h3,
+.about-div p {
+  padding: 10px 0;
+}
+.about-div h3,
+.about-div p {
+  font-weight: 400;
+}
+
+.about-div p {
+  color: rgb(196, 196, 196);
+}
+/*//////////////////////////////////*/
+
+.start-component {
+  width: 100%;
+  background-color: #050631;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.start-component h2 {
+  font-size: 40px;
+  padding: 20px;
+}
+.start-component div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.start-component div .link {
+  background-color: transparent;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  margin: 10px 10px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: white;
+  text-decoration: none;
+}
+.start-component div .link:hover {
+  background-color: white;
+  color: #050631;
+}
+
+/*//////////////////////////////////*/
+
+.footer-component {
+  width: 100%;
+  background-color: #040424;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-component p {
+  padding: 20px;
+}
+/*//////////////////////////////////*/
+
+@media screen and (max-width: 900px) {
+  .deco-part {
+    display: none;
+  }
+  .start-component div {
+    flex-direction: column;
+  }
+}
